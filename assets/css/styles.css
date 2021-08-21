@@ -40,3 +40,15 @@ ul .nuxt-link-exact-active {
   background-color: #fff;
   color: #232323 !important;
 }
+
+h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}

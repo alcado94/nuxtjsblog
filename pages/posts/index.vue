@@ -20,6 +20,15 @@ export default {
     components: {
         PostItem
     },
+    async asyncData({ $content, params }) {
+        const posts = await $content('posts') // instead of $content('articles', params.slug)
+            .only(['title', 'slug', 'description'])
+            .sortBy('createdAt', 'asc')
+            .fetch()
+        return {
+            posts
+        }
+    },
     data() {
         return {
             posts: [
