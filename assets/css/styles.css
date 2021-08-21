@@ -1,0 +1,42 @@
+
+.page-leave-active,
+.page-enter-active {
+  transition: 0.5s;
+}
+.page-enter {
+  transform: translate(50%, 0);
+  opacity: 0;
+}
+.page-leave-to {
+  transform: translate(-50%, 0);
+  opacity: 0;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: local("Graphik"), url(@/assets/fonts/graphik-fonts/GraphikLight.otf) format("truetype");
+}
+
+* {
+    font-family: 'Graphik', sans-serif !important
+}
+
+nav {
+  width: 15%;
+}
+
+nav ul {
+  margin-top: 0;
+}
+
+.third-content .first-section {
+  margin-top: 30px;
+}
+
+/* .nuxt-link-active {
+  color: #00c58e !important;
+} */
+ul .nuxt-link-exact-active {
+  background-color: #fff;
+  color: #232323 !important;
+}
